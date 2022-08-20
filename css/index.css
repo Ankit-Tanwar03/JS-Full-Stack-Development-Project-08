@@ -21,6 +21,7 @@ body{
 nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 30px;
 }
 
@@ -33,6 +34,10 @@ nav img{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.nav-items i{
+    display: none;
 }
 
 .nav-item{
@@ -119,4 +124,68 @@ h4{
     position: absolute;
     margin-top: 400px;
     margin-left: 60px;
+}
+
+@media screen and (max-width: 1300px) {
+    .vector-img{
+        width:60px
+    }
+    .intro-img{
+        width:500px
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .nav-items i{
+        display: block;
+        font-size: 20px;
+        color: #ffffff;
+        margin-left: 300px;
+    }
+
+    .imgs-div{
+        margin-right: 0px;
+    }
+
+    .left-section{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .nav-item{
+        display: none;
+    }
+
+    .intro-section{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 700px){
+    nav img{
+        margin-left: 20px;
+    }
+
+    .signin-btn{
+        display: none;
+        margin-right: 20px;
+    }
+
+    .nav-items i{
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 520px){
+    .vector-img{
+        width:40px
+    }
+    .intro-img{
+        width:350px
+    }
 }
